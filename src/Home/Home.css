@@ -1,4 +1,4 @@
-.bgi{
+/* .bgi{
     background-image: url("https://images.pexels.com/photos/19599840/pexels-photo-19599840.jpeg?cs=srgb&dl=pexels-wwarby-19599840.jpg&fm=jpg");
 height: 100vh;
 background-repeat: no-repeat;
@@ -14,8 +14,7 @@ background-size: cover;
     margin-top: 50px;
     font-size: 100px;
     display: flex;
-    flex-direction: column;
-    
+    flex-direction: column;  
 }
 .play{
     background: linear-gradient(135deg, rgb(68, 67, 67), white);
@@ -29,4 +28,78 @@ background-size: cover;
     cursor: pointer;
 
     
-}
+} */
+
+.bgi {
+    background-image: url("https://images.pexels.com/photos/19599840/pexels-photo-19599840.jpeg?cs=srgb&dl=pexels-wwarby-19599840.jpg&fm=jpg");
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  
+  .logo {
+    position: absolute;
+    color: white;
+    top: 50px; /* Adjusted for better positioning */
+    right: 50px;
+    text-align: right;
+    margin-right: 0; /* Remove margin-right for mobile */
+    font-size: 6vw; /* Set font-size relative to viewport width */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+  }
+  .link{
+    text-decoration: none;
+  }
+  .play {
+    background: linear-gradient(135deg, rgb(68, 67, 67), white);
+    width: 300px;
+    padding: 20px;
+    font-size: 30px;
+    font-weight: 800;
+    margin-top: 50px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    transition: background 0.3s ease; /* Smooth hover effect */
+  }
+  
+  /* Hover effect for button */
+  .play:hover {
+    background: linear-gradient(135deg, white, rgb(68, 67, 67));
+  }
+  
+  @media (max-width: 768px) {
+    .logo {
+      font-size: 8vw; /* Increase font size for tablets and small screens */
+      top: 20px;
+      right: 20px;
+      text-align: center; /* Center text on smaller screens */
+    }
+  
+    .play {
+      width: 250px;
+      font-size: 24px;
+      margin: 20px auto;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .logo {
+      font-size: 10vw; /* Increase font size even more for very small screens */
+      top: 10px;
+      right: 10px;
+    }
+  
+    .play {
+      width: 200px;
+      font-size: 22px;
+      margin-top: 20px;
+    }
+  }
+  
