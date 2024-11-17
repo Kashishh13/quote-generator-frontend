@@ -1,0 +1,32 @@
+.bgi{
+    background-image: url("https://images.pexels.com/photos/19599840/pexels-photo-19599840.jpeg?cs=srgb&dl=pexels-wwarby-19599840.jpg&fm=jpg");
+height: 100vh;
+background-repeat: no-repeat;
+background-size: cover;
+}
+.logo{
+    position: absolute;
+    color: white;
+    top: 0;
+    text-align: right;
+    right: 0;
+    margin-right: 100px;
+    margin-top: 50px;
+    font-size: 100px;
+    display: flex;
+    flex-direction: column;
+    
+}
+.play{
+    background: linear-gradient(135deg, rgb(68, 67, 67), white);
+
+    width: 300px;
+    margin-left: 400px;
+    padding: 20px;
+    font-size: 30px;
+    font-weight: 800;
+    margin-top: 100px;
+    cursor: pointer;
+
+    
+}
