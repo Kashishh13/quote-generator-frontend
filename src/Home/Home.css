@@ -1,105 +1,101 @@
-/* .bgi{
-    background-image: url("https://images.pexels.com/photos/19599840/pexels-photo-19599840.jpeg?cs=srgb&dl=pexels-wwarby-19599840.jpg&fm=jpg");
-height: 100vh;
-background-repeat: no-repeat;
-background-size: cover;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
 }
-.logo{
-    position: absolute;
-    color: white;
-    top: 0;
-    text-align: right;
-    right: 0;
-    margin-right: 100px;
-    margin-top: 50px;
-    font-size: 100px;
-    display: flex;
-    flex-direction: column;  
+
+body {
+  background-image: url("https://t3.ftcdn.net/jpg/01/11/85/74/360_F_111857497_rwca7uWf5ngzyutIUf2jlsvUovOBTiVA.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: 'Arial', sans-serif;
+  background-color: #f7f7f7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  flex-direction: column;
 }
-.play{
-    background: linear-gradient(135deg, rgb(68, 67, 67), white);
 
-    width: 300px;
-    margin-left: 400px;
-    padding: 20px;
-    font-size: 30px;
-    font-weight: 800;
-    margin-top: 100px;
-    cursor: pointer;
+.quote-container {
+ transform: rotate(350deg);
+  position: relative;
+  background: linear-gradient(90deg,rgb(240, 191, 240),rgb(175, 238, 175)); 
+  width: 450px;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  animation: slideIn 0.5s ease-out; 
+}
 
-    
-} */
 
-.bgi {
-    background-image: url("https://images.pexels.com/photos/19599840/pexels-photo-19599840.jpeg?cs=srgb&dl=pexels-wwarby-19599840.jpg&fm=jpg");
-    height: 100vh;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
+.quote-text {
+  font-size: 20px;
+  font-style: italic;
+  color: #3f3e3e;
+  margin-bottom: 10px;
+  margin-top: 20px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.quote-author {
+  font-size: 18px;
+  color: #333;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.quote-text:hover {
+  transform: scale(1.05); 
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+  background-color: #ff7f50; 
+  transform: scale(1.1); 
+}
+
+button:focus {
+  outline: none;
+}
+
+button.get-quote {
+  background-color: #4CAF50;
+  color: white;
+  margin-bottom: 20px;
+}
+
+button.get-quote:hover {
+  background-color: #45a049;
+}
+
+button.tweet-quote {
+  background-color: rgb(248, 170, 248);
+  color: black;
+  margin-left: 50px;
+}
+
+button.tweet-quote:hover {
+  background-color: rgb(241, 167, 241);
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
   }
-  
-  .logo {
-    position: absolute;
-    color: white;
-    top: 50px; /* Adjusted for better positioning */
-    right: 50px;
-    text-align: right;
-    margin-right: 0; /* Remove margin-right for mobile */
-    font-size: 6vw; /* Set font-size relative to viewport width */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    z-index: 10;
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
-  .link{
-    text-decoration: none;
-  }
-  .play {
-    background: linear-gradient(135deg, rgb(68, 67, 67), white);
-    width: 300px;
-    padding: 20px;
-    font-size: 30px;
-    font-weight: 800;
-    margin-top: 50px;
-    cursor: pointer;
-    text-align: center;
-    text-decoration: none;
-    display: block;
-    transition: background 0.3s ease; /* Smooth hover effect */
-  }
-  
-  /* Hover effect for button */
-  .play:hover {
-    background: linear-gradient(135deg, white, rgb(68, 67, 67));
-  }
-  
-  @media (max-width: 768px) {
-    .logo {
-      font-size: 8vw; /* Increase font size for tablets and small screens */
-      top: 20px;
-      right: 20px;
-      text-align: center; /* Center text on smaller screens */
-    }
-  
-    .play {
-      width: 250px;
-      font-size: 24px;
-      margin: 20px auto;
-    }
-  }
-  
-  @media (max-width: 480px) {
-    .logo {
-      font-size: 10vw; /* Increase font size even more for very small screens */
-      top: 10px;
-      right: 10px;
-    }
-  
-    .play {
-      width: 200px;
-      font-size: 22px;
-      margin-top: 20px;
-    }
-  }
-  
+} 
