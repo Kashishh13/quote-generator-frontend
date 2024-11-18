@@ -22,7 +22,7 @@ body {
  transform: rotate(350deg);
   position: relative;
   background: linear-gradient(90deg,rgb(240, 191, 240),rgb(175, 238, 175)); 
-  width: 450px;
+  width: 350px;
   padding: 30px;
   border-radius: 10px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
